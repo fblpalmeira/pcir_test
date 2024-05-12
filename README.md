@@ -11,7 +11,8 @@ I plan to develop a package called ‘Potential for Conflict Index - PCI’, whi
 
 (Potential For Conflict Index)[https://sites.warnercnr.colostate.edu/jerryv/potential-conflict-index/]
 
-<>
+<https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png>
+<https://github.com/fblpalmeira/pcir/blob/main/images/Fig1b.png>
 Formulae of PCI
 
 ## References
