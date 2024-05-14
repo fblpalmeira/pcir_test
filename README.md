@@ -106,7 +106,7 @@ Stages of the 'pcir' package:
 
 **Figure 2.** Workflow of the 'pcir' package.
 
-### Input
+### Data input
 
 Read the respondents’ ratings in  `R`:
 
