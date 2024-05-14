@@ -44,9 +44,7 @@ where:
 - Z = the maximum possible sum of all scores = n × extreme score (e.g., Z = 3n),
 where n = total number of subjects
 
-## Pratical example
-
-### Univariate model
+### Pratical example: Univariate model
 
 This study used in the example assessed wildlife value orientations, management action acceptability, and wildlife-associated recreation behaviors in six western states in US. We used data for the state of Alaska on a series of items dealing with bear management. Subjects were then asked to rate the acceptability of five different management responses (e.g., leave the bear alone, capture and destroy the bear). 
 
