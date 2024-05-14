@@ -1,14 +1,12 @@
 # pcir - Potential for Conflict Index in R
 
-## [rOpenSci Champions Program](https://ropensci.org/champions/)
+## Introduction
 
 I plan to develop a package called ‘Potential for Conflict Index - PCI’, which is a descriptive statistical method used to enhance the understanding of outcomes in human dimensions research developed by Manfredo et al. (2003). The package will equip users with the tools required for calculating, comparing, and graphing the potential for conflict. The concepts of consensus and disagreement/conflict hold relevance across various fields, including economics, political science, psychology, sociology, and natural resources. It is worth noting that although PCI can currently be computed using software such as Excel, SPSS, and SAS, there is no dedicated R package available for conducting this specific analysis. 
 
-Additional information: [Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)
-
-## Introduction
-
-[Potential For Conflict Index](https://sites.warnercnr.colostate.edu/jerryv/potential-conflict-index/)
+Additional information: [rOpenSci Champions Program](https://ropensci.org/champions/)
+                        [Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)
+                        [Potential For Conflict Index](https://sites.warnercnr.colostate.edu/jerryv/potential-conflict-index/)
 
 ## Methods
 
@@ -61,9 +59,9 @@ This study used in the example assessed wildlife value orientations, management 
 | Highly acceptable | 3 | 108 | 32 |
 | Total | - | 342 | 100 |
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1c_formula.png" width = "100px"> (|-3| * 26) + (|-2| * 31) + (|-1| * 20) = 160
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1c_formula.png" width = "90px"> (|-3| * 26) + (|-2| * 31) + (|-1| * 20) = 160
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1d_formula.png" width = "100px"> (3 * 108) + (2 * 90) + (1 * 52) = 556
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1d_formula.png" width = "90px"> (3 * 108) + (2 * 90) + (1 * 52) = 556
  
 - Xt = 160 + 556 = 716 
 - n = total number of subjects = 342 
