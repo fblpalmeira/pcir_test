@@ -61,17 +61,13 @@ This study used in the example assessed wildlife value orientations, management 
 | Highly acceptable | 3 | 108 | 32 |
 | Total | - | 342 | 100 |
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1c_formula.png" align= "left" width = "100px"> 
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1c_formula.png" width = "100px"> (|-3| * 26) + (|-2| * 31) + (|-1| * 20) = 160
 
-(|-3|*26) + (|-2|*31) + (|-1|*20) = 160
-
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1d_formula.png" width = "100px">  
- 
- (3 * 108) + (2 * 90) + (1 * 52) = 556
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1d_formula.png" width = "100px"> (3 * 108) + (2 * 90) + (1 * 52) = 556
  
 - Xt = 160 + 556 = 716 
 - n = total number of subjects = 342 
-- PCI for “Leave Bear Alone” = [ 1 - |56/716 - 160/716| ] * 716/(3*342) = 0.31
+- PCI for “Leave Bear Alone” = [ 1 - |556/716 - 160/716| ] * 716 / (3 * 342) = 0.31
 
 **Table 2.**  “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
 
