@@ -61,9 +61,11 @@ This study used in the example assessed wildlife value orientations, management 
 | Highly acceptable | 3 | 108 | 32 |
 | Total | - | 342 | 100 |
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2.png"> 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Table2.png">  
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig3.png">  
+Figs
+
+- Xt = 160 + 556 = 716 
+- n = total number of subjects = 342 
+- PCI for “Leave Bear Alone” = [1 - |56/716 - 160/716|] * 716/(3*342) = 0.31
 
 ## References
 
