@@ -75,8 +75,8 @@ This study used in the example assessed wildlife value orientations, management 
 
 **Table 2.**  “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
 
-| Management action |  Conflict index  | Mean /score  |
-| ----------------- | ---------------- | ------------ |
+| Management action |  Conflict index  | Mean score  |
+| ----------------- | ---------------- | ----------- |
 | Leave the bear alone | 0.31 | 1.16 | 
 | Capture and destroy the bear | 0.39 | -0.91 |
 | Capture and relocate the bear to a new location in hopes that it will NOT return | 0.18 | 1.54 | 
