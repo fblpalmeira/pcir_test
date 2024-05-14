@@ -87,6 +87,7 @@ This study used in the example assessed wildlife value orientations, management 
 acceptable” = 3.
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2_buble_graph.png">  
+
 **Figure 1.** Univariate measures using the PCI and the graphic technique: Alaskans’ ratings of acceptability of bear management actions. Numbers listed for each bubble in the graph represent the Potential for Conflict Index (PCI). 
 
 ## References
