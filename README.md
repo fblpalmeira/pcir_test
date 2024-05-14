@@ -48,9 +48,19 @@ where n = total number of subjects
 
 This study used in the example assessed wildlife value orientations, management action acceptability, and wildlife-associated recreation behaviors in six western states in US. We used data for the state of Alaska on a series of items dealing with bear management. Subjects were then asked to rate the acceptability of five different management responses (e.g., leave the bear alone, capture and destroy the bear). 
 
-Table 1. 
+**Table 1.** Alaskan Respondents’ Ratings of Acceptability of “Leave the Bear Alone”.
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Table1.png">  
+| Response scale |  Scoring  | Frequency  |  Percent | 
+| -------------- | --------- | ---------- | -------- | 
+| Highly unacceptable | -3 | 26 | 8 | 
+| Moderately unacceptable | -2 | 31 | 9 |
+| Slightly unacceptable | -1 | 20 | 6 |
+| Neutral | 0 | 15 | 4 |
+| Slightly acceptable | 1 | 52 | 15 |
+| Moderately acceptable | 2 | 90 | 26 |
+| Highly acceptable | 3 | 108 | 32 |
+| Total | - | 342 | 100 |
+
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2.png"> 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Table2.png">  
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig3.png">  
