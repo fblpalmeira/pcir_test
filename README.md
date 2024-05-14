@@ -30,7 +30,7 @@ In the examples presented in this package, the univariate scale was:
 
 The index is computed using a variable’s frequency distribution following the formula: 
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png align="left" width = "250px"/"> 
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png" align="left" width = "500px"> 
 
 where: 
 PCI = Potential for Conflict Index 
