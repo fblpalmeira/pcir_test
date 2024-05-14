@@ -8,8 +8,6 @@ Additional information: [Introducing rOpenSci Champions - Cohort 2023-2024](http
 
 ## Introduction
 
-
-
 [Potential For Conflict Index](https://sites.warnercnr.colostate.edu/jerryv/potential-conflict-index/)
 
 ## Methods
@@ -32,7 +30,7 @@ In the examples presented in this package, the univariate scale was:
 
 The index is computed using a variable’s frequency distribution following the formula: 
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png"> 
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png align="left" width = "250px"/"> 
 
 where: 
 PCI = Potential for Conflict Index 
