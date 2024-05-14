@@ -89,6 +89,10 @@ To enhance the ease of understanding, Figure 1 displays the conflict indices and
 
 ## Script in R
 
+[Data]()
+[Table 1](https://github.com/fblpalmeira/pcir/blob/main/data/Table1.xlsx)
+[Table 2](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx)
+
 ### Input
 
 Read the respondents’ ratings in  `R`:
