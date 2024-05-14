@@ -96,12 +96,13 @@ Materials:
 - [Table 2 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx)
 
 Stages of the 'pcir' package:
-1. Read the input data from the interviews;
+1. Read the data input from the interviews;
 2. Count the frequencies of responses within each question;
-3. Calculate the conflict potential index and the average of responses for each question;
-4. Organize the output into a table;
-5. Create the bubble chart using the indices.
-   
+3. Calculate the potential conflict index for each question;
+4. Create a bubble chart using the indices.
+
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/diagrammer_pcir.png">     
+
 **Figure 2.** Workflow of the 'pcir' package.
 
 ### Input
