@@ -1,3 +1,4 @@
+4
 # pcir - Potential for Conflict Index in R
 
 ## Introduction
@@ -69,7 +70,7 @@ This study used in the example assessed wildlife value orientations, management 
 
 The potential for conflict index for “leave the bear alone” was approximately 0.31 (Table 2). Similar computations for the other four management actions varied between 0.04 to 0.39.
 
-**Table 2.**  “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
+**Table 2.** “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
 
 | Management action |  Conflict index  | Mean score(1)  |
 | ----------------- | ---------------- | -------------- |
@@ -95,12 +96,13 @@ Materials:
 - [Data `.xlsx`]
 - [Table 1 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table1.xlsx)
 - [Table 2 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx)
-
+- [Figure 1 `.png`]
+  
 Stages of the 'pcir' package:
 1. Read the data input from the interviews;
-2. Count the frequencies of responses within each question;
-3. Calculate the potential conflict index for each question;
-4. Create a bubble chart using the indices.
+2. Count the frequencies of responses within each question / Write [(Table 1)](https://github.com/fblpalmeira/pcir/blob/main/data/Table1.xlsx);
+3. Calculate the potential conflict index for each question / Write [(Table 2)](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx);
+4. Create a bubble chart using the indices / Save [Figure 1].
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/diagrammer_pcir.png">     
 
