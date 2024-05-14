@@ -88,6 +88,58 @@ To enhance the ease of understanding, Figure 1 displays the conflict indices and
 
 **Figure 1.** Univariate measures using the PCI and the graphic technique: Alaskans’ ratings of acceptability of bear management actions. Numbers listed for each bubble in the graph represent the Potential for Conflict Index (PCI). 
 
+## Script in R
+
+### Input
+
+Read the respondents’ ratings in  `R`:
+
+``` r
+
+#############
+# Example 1 #
+#############
+
+.
+.
+.
+
+
+```
+
+### Formula
+
+Calculate the PCI indexes in  `R`:
+
+``` r
+
+#############
+# Example 1 #
+#############
+
+.
+.
+.
+
+
+``` 
+### Output
+
+Create a bubble graph to illustrating the pci indexes in  `R`:
+
+``` r
+
+#############
+# Example 1 #
+#############
+
+.
+.
+.
+
+
+```
+
 ## References
 
 Manfredo, M., Vaske, J., & Teel, T. (2003). [The potential for conflict index: A graphic approach to practical significance of human dimensions research](https://www.tandfonline.com/doi/abs/10.1080/10871200304310). Human Dimensions of Wildlife, 8(3), 219-228.
