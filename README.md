@@ -67,6 +67,8 @@ This study used in the example assessed wildlife value orientations, management 
 - n = total number of subjects = 342 
 - PCI for “Leave Bear Alone” = [ 1 - |556 / 716 - 160 / 716| ] * 716 / (3 * 342) = 0.31
 
+The potential for conflict index for “leave the bear alone” was approximately 0.31. Similar computations for the other four management actions varied between 0.04 to 0.39 (Table 1).
+
 **Table 2.**  “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
 
 | Management action |  Conflict index  | Mean score(1)  |
@@ -79,6 +81,8 @@ This study used in the example assessed wildlife value orientations, management 
 
 (1) The following scoring was used in the computation of means for these variables: “Highly unacceptable” = −3, “Moderately unacceptable” = −2, “Slightly unacceptable” = −1, “Neither” = 0, “Slightly acceptable” = 1, “Moderately acceptable” = 2, and “Highly
 acceptable” = 3 (see Table 1).
+
+To enhance the ease of understanding, Figure 1 displays the conflict indices and variable means graphically.
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2_bubble_graph.png">  
 
