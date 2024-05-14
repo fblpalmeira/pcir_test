@@ -5,6 +5,7 @@
 I plan to develop a package called [‘Potential for Conflict Index - PCI’](https://sites.warnercnr.colostate.edu/jerryv/potential-conflict-index/), which is a descriptive statistical method used to enhance the understanding of outcomes in human dimensions research developed by [Manfredo et al. (2003)](https://www.tandfonline.com/doi/abs/10.1080/10871200304310). The package will equip users with the tools required for calculating, comparing, and graphing the potential for conflict. The concepts of consensus and disagreement/conflict hold relevance across various fields, including economics, political science, psychology, sociology, and natural resources. It is worth noting that although PCI can currently be computed using software such as Excel, SPSS, and SAS, there is no dedicated R package available for conducting this specific analysis. 
 
 Additional information: [rOpenSci Champions Program](https://ropensci.org/champions/)
+
                         [Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)
                         
 ## Methods
