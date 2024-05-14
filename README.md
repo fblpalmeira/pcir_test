@@ -142,7 +142,7 @@ Calculate the PCI indexes in  `R`:
 ``` 
 ### Output
 
-Create a bubble graph to illustrating the pci indexes in  `R`:
+Create a bubble graph to illustrate the pci indexes in  `R`:
 
 ``` r
 
