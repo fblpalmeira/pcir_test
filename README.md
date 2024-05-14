@@ -89,8 +89,8 @@ To enhance the ease of understanding, Figure 1 displays the conflict indices and
 
 ## Script in R
 
-- [Script `.R`]()
-- [Data `.xlsx`]()
+- [Script `.R`]
+- [Data `.xlsx`]
 - [Table 1 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table1.xlsx)
 - [Table 2 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx)
 
