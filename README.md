@@ -67,7 +67,7 @@ This study used in the example assessed wildlife value orientations, management 
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1d_formula.png" width = "100px">  
  
- (3*108) + (2*90) + (1*52) = 556
+ (3 * 108) + (2 * 90) + (1 * 52) = 556
  
 - Xt = 160 + 556 = 716 
 - n = total number of subjects = 342 
