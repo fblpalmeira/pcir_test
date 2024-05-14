@@ -30,14 +30,14 @@ In the examples presented in this package, the univariate scale was:
 
 The index is computed using a variable’s frequency distribution following the formula: 
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png" align="left" width = "500px"> 
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a_formula.png" width = "300px"> 
 
 where: 
-PCI = Potential for Conflict Index 
-Xa = an individual’s “acceptable” (e.g., 1, 2, or 3) score 
-na = all individuals with acceptable scores 
-Xu = an individual’s “unacceptable” (e.g., −1, −2, or −3) score 
-nu = all individuals with unacceptable scores
+- PCI = Potential for Conflict Index 
+- Xa = an individual’s “acceptable” (e.g., 1, 2, or 3) score 
+- na = all individuals with acceptable scores 
+- Xu = an individual’s “unacceptable” (e.g., −1, −2, or −3) score 
+- nu = all individuals with unacceptable scores
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1b.png">  
 
