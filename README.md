@@ -44,7 +44,7 @@ where n = total number of subjects
 
 ### Pratical example: Univariate model
 
-This study used in the example assessed wildlife value orientations, management action acceptability, and wildlife-associated recreation behaviors in six western states in US. We used data for the state of Alaska on a series of items dealing with bear management. Subjects were then asked to rate the acceptability of five different management responses (e.g., leave the bear alone, capture and destroy the bear). 
+This study used in the example assessed wildlife value orientations, management action acceptability, and wildlife-associated recreation behaviors in six western states in US. We used data for the state of Alaska on a series of items dealing with bear management. Subjects were then asked to rate the acceptability of five different management responses (e.g., leave the bear alone, capture and destroy the bear)(Table 1). 
 
 **Table 1.** Alaskan Respondents’ Ratings of Acceptability of “Leave the Bear Alone”.
 
@@ -67,7 +67,7 @@ This study used in the example assessed wildlife value orientations, management 
 - n = total number of subjects = 342 
 - PCI for “Leave Bear Alone” = [ 1 - |556 / 716 - 160 / 716| ] * 716 / (3 * 342) = 0.31
 
-The potential for conflict index for “leave the bear alone” was approximately 0.31. Similar computations for the other four management actions varied between 0.04 to 0.39 (Table 1).
+The potential for conflict index for “leave the bear alone” was approximately 0.31 (Table 2). Similar computations for the other four management actions varied between 0.04 to 0.39.
 
 **Table 2.**  “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
 
