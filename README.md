@@ -8,14 +8,52 @@ Additional information: [Introducing rOpenSci Champions - Cohort 2023-2024](http
 
 ## Introduction
 
+
+
 [Potential For Conflict Index](https://sites.warnercnr.colostate.edu/jerryv/potential-conflict-index/)
 
 ## Methods
 
-Formulae of PCI:
+### Theoretical approach
+
+The PCI indicates the ratio of scoring on either side of the center point on a rating scale. This might include the center points “neutral”, “neither agree nor disagree”, “neither acceptable nor unacceptable”, or “neither support nor oppose.” We assume that the greatest possibility for conflict occurs when there is a bimodal distribution between the two extreme values of the response scale (e.g., 50% strongly support, 50% strongly oppose, 0% neutral). In that case the index attains its highest possible value of 1. A distribution with 100% on one side of the neutral point will yield a PCI of 0 (i.e., no conflict). 
+
+The PCI formula requires a response scale in which there is a neutral center point with an equal number of response options on either side. Numerical ratings must be assigned in ordinal fashion with the center point receiving a value of 0. 
+
+In the examples presented in this package, the univariate scale was:
+
+- (3) Highly Acceptable,
+- (2) Moderately Acceptable,
+- (1) Slightly Acceptable,
+- (0) Neither Acceptable nor Unacceptable,
+- (−1) Slightly Unacceptable,
+- (−2) Moderately Unacceptable,
+- (−3) Highly Unacceptable.
+
+The index is computed using a variable’s frequency distribution following the formula: 
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1a.png"> 
+
+where: 
+PCI = Potential for Conflict Index 
+Xa = an individual’s “acceptable” (e.g., 1, 2, or 3) score 
+na = all individuals with acceptable scores 
+Xu = an individual’s “unacceptable” (e.g., −1, −2, or −3) score 
+nu = all individuals with unacceptable scores
+
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1b.png">  
+
+Z = the maximum possible sum of all scores = n × extreme score (e.g., Z = 3n),
+where n = total number of subjects
+
+## Pratical example
+
+### Univariate model
+
+This study used in the example assessed wildlife value orientations, management action acceptability, and wildlife-associated recreation behaviors in six western states in US. We used data for the state of Alaska on a series of items dealing with bear management. Subjects were then asked to rate the acceptability of five different management responses (e.g., leave the bear alone, capture and destroy the bear). 
+
+Table 1. 
+
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Table1.png">  
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2.png"> 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/images/Table2.png">  
