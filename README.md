@@ -82,8 +82,12 @@ This study used in the example assessed wildlife value orientations, management 
 | Capture and relocate the bear to a new location in hopes that it will NOT return | 0.18 | 1.54 | 
 | Use techniques (for example, loud noises or rubber bullets) designed to frighten the bear away | 0.10 | 2.02 |
 | Educate people who live near bear habitat on how to avoid problems with bears  | 0.04 | 2.62 | 
+
 (1) The following scoring was used in the computation of means for these variables: “Highly unacceptable” = −3, “Moderately unacceptable” = −2, “Slightly unacceptable” = −1, “Neither” = 0, “Slightly acceptable” = 1, “Moderately acceptable” = 2, and “Highly
 acceptable” = 3.
+
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2_buble_graph.png" width = "200px">  
+**Figure 1.** Univariate measures using the PCI and the graphic technique: Alaskans’ ratings of acceptability of bear management actions. Numbers listed for each bubble in the graph represent the Potential for Conflict Index (PCI). 
 
 ## References
 
