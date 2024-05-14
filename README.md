@@ -39,9 +39,9 @@ where:
 - Xu = an individual’s “unacceptable” (e.g., −1, −2, or −3) score 
 - nu = all individuals with unacceptable scores
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1b.png">  
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig1b_formula.png" width = "200px">  
 
-Z = the maximum possible sum of all scores = n × extreme score (e.g., Z = 3n),
+- Z = the maximum possible sum of all scores = n × extreme score (e.g., Z = 3n),
 where n = total number of subjects
 
 ## Pratical example
