@@ -1,4 +1,3 @@
-4
 # pcir - Potential for Conflict Index in R
 
 ## Introduction
