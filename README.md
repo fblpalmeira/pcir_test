@@ -65,7 +65,7 @@ Figs
 
 - Xt = 160 + 556 = 716 
 - n = total number of subjects = 342 
-- PCI for “Leave Bear Alone” = [1 - |56/716 - 160/716|] * 716/(3*342) = 0.31
+- PCI for “Leave Bear Alone” = [ 1 - |56/716 - 160/716| ] * 716/(3*342) = 0.31
 
 ## References
 
