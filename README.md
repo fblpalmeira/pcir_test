@@ -86,7 +86,7 @@ This study used in the example assessed wildlife value orientations, management 
 (1) The following scoring was used in the computation of means for these variables: “Highly unacceptable” = −3, “Moderately unacceptable” = −2, “Slightly unacceptable” = −1, “Neither” = 0, “Slightly acceptable” = 1, “Moderately acceptable” = 2, and “Highly
 acceptable” = 3 (see Table 1).
 
-<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2_buble_graph.png">  
+<img src="https://github.com/fblpalmeira/pcir/blob/main/images/Fig2_bubble_graph.png">  
 
 **Figure 1.** Univariate measures using the PCI and the graphic technique: Alaskans’ ratings of acceptability of bear management actions. Numbers listed for each bubble in the graph represent the Potential for Conflict Index (PCI). 
 
