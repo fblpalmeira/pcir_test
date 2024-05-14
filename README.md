@@ -98,11 +98,11 @@ Materials:
 
 Stages of the 'pcir' package:
 
-- 1. Read the input data from the interviews;
-- 2. Count the frequencies of responses within each question;
-- 3. Calculate the conflict potential index and the average of responses for each question;
-- 4. Organize the output into a table;
-- 5. Create the bubble chart using the indices.
+1. Read the input data from the interviews;
+2. Count the frequencies of responses within each question;
+3. Calculate the conflict potential index and the average of responses for each question;
+4. Organize the output into a table;
+5. Create the bubble chart using the indices.
 
 ### Input
 
