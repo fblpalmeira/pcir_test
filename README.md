@@ -94,8 +94,8 @@ Materials:
 - [Script `.R`]
 - [Data `.xlsx`]
 - [Table 1 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table1.xlsx)
-- [Table 2 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx)
-- [Figure 1 `.png`]
+- [Table 2 `.xlsx`](https://github.com/fblpalmeira/pcir/blob/main/data/Table2b.xlsx)
+- [Figure 1 `.png`](https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png)
   
 Stages of the 'pcir' package:
 1. Read the data input from the interviews;
@@ -113,14 +113,9 @@ Read the respondents’ ratings in  `R`:
 
 ``` r
 
-#############
-# Example 1 #
-#############
-
 .
 .
 .
-
 
 ```
 
@@ -130,27 +125,24 @@ Calculate the PCI indexes in  `R`:
 
 ``` r
 
-#############
-# Example 1 #
-#############
-
 .
 .
 .
 
 
-``` 
+```
+
 ### Output
 
 Create a bubble graph to illustrate the pci indexes in  `R`:
 
 ``` r
 
-############################################################
-# Part 4: Output                                           #
-#                                                          #
-# Create a bubble graph to illustrate the pci indexes in R #
-############################################################
+###################################################
+# Part 4: Output                                  #
+#                                                 #
+# Create a bubble graph to illustrate the indexes #
+###################################################
 
 y3 <- readxl::read_excel("Table2b.xlsx", na = " ")
 head(y3)
@@ -194,7 +186,7 @@ dev.off()
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png">     
 
-**Figure 3.** Bubble graph illustranting the potencial conflict indices.
+**Figure 3.** Bubble graph illustranting the potencial conflict indexes.
 
 ## References
 
