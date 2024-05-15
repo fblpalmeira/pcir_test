@@ -46,7 +46,7 @@ where n = total number of subjects
 
 This study used in the example assessed wildlife value orientations, management action acceptability, and wildlife-associated recreation behaviors in six western states in US. We used data for the state of Alaska on a series of items dealing with bear management. Subjects were then asked to rate the acceptability of five different management responses (e.g., leave the bear alone, capture and destroy the bear)(Table 1). 
 
-**Table 1.** Alaskan Respondents’ Ratings of Acceptability of “Leave the Bear Alone”.
+**Table 1.** Alaskan respondents’ ratings of acceptability of “Leave the bear alone”.
 
 | Response scale |  Scoring  | Frequency  |  Percent | 
 | -------------- | --------- | ---------- | -------- | 
@@ -69,7 +69,7 @@ This study used in the example assessed wildlife value orientations, management 
 
 The potential for conflict index for “leave the bear alone” was approximately 0.31 (Table 2). Similar computations for the other four management actions varied between 0.04 to 0.39.
 
-**Table 2.** “Potential for Conflict Indices” and Mean Scores for Alaskan Respondents’ Ratings of Acceptability of Bear Management Actions.
+**Table 2.** Potential for conflict indices and mean scores for Alaskan respondents’ ratings of acceptability of bear management actions.
 
 | Management action |  Conflict index  | Mean score(1)  |
 | ----------------- | ---------------- | -------------- |
@@ -109,7 +109,7 @@ Stages of the 'pcir' package:
 
 ### Data input
 
-Read the respondents’ ratings in  `R`:
+Read the respondents’ ratings:
 
 ``` r
 
@@ -121,7 +121,7 @@ Read the respondents’ ratings in  `R`:
 
 ### Formula
 
-Calculate the PCI indexes in  `R`:
+Calculate the PCI indices:
 
 ``` r
 
@@ -134,14 +134,14 @@ Calculate the PCI indexes in  `R`:
 
 ### Output
 
-Create a bubble graph to illustrate the pci indexes in  `R`:
+Create a bubble graph to illustrate the potential conflict indices:
 
 ``` r
 
 ###################################################
 # Part 4: Output                                  #
 #                                                 #
-# Create a bubble graph to illustrate the indexes #
+# Create a bubble graph to illustrate the indices #
 ###################################################
 
 y3 <- readxl::read_excel("Table2b.xlsx", na = " ")
@@ -187,7 +187,7 @@ dev.off()
 
 <img src="https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png">     
 
-**Figure 3.** Bubble graph illustranting the potencial conflict indexes.
+**Figure 3.** Bubble graph illustranting the potencial conflict indices.
 
 ## References
 
