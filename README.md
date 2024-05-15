@@ -146,16 +146,54 @@ Create a bubble graph to illustrate the pci indexes in  `R`:
 
 ``` r
 
-#############
-# Example 1 #
-#############
+# Part 4: Output
+# Create a bubble graph to illustrate the pci indexes in R
 
-.
-.
-.
+y3 <- readxl::read_excel("Table2b.xlsx", na = " ")
+head(y3)
 
+y3 <- dplyr::mutate_at(y3, c('PCI', 'Mean'), as.numeric)
+head(y3)
+summary(y3)
+
+y3$Management <- factor(y3$Management, levels = c("Leave bear alone",
+                                                  "Capture and destroy",
+                                                  "Capture and relocate",
+                                                  "Frighten the bear",
+                                                  "Educate about bears"))
+
+png(file="output_pci.jpeg", width = 1000, height = 1000)
+
+library(ggplot2)
+p <- ggplot(y3, aes(x = Management, y = Mean, size = PCI)) +
+     geom_point(alpha=0.25) +
+     geom_text(aes(label = after_stat(y3$PCI)), nudge_y = 0.35, nudge_x = 0.1, size = 5) +
+     ylab("Action acceptability") + xlab("") + 
+     ylim (-3,3) +
+     scale_size_area(max_size = 14) +
+     theme_bw() +
+     theme (panel.grid.major.y = element_blank(), 
+            panel.grid.minor.y = element_blank()) + 
+            theme (panel.grid.major.x = element_blank(), 
+            panel.grid.minor.x = element_blank()) +
+     theme (axis.title.x=element_text(size=16)) +
+     theme (axis.title.y=element_text(size=16)) +
+     theme (axis.text.x=element_text(size=14, angle = 45, vjust = 1, hjust = 1)) +
+     theme (axis.text.y=element_text(size=14)) +
+     theme (legend.key.size = unit(1, 'cm'),
+            legend.key.height = unit(1, 'cm'),
+            legend.key.width = unit(1, 'cm'),
+            legend.title = element_text(size=16), 
+            legend.text = element_text(size=14))
+p
+
+dev.off()
 
 ```
+
+<img src="https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png">     
+
+**Figure 3.** Bubble graph illustranting the potencial conflict indices.
 
 ## References
 
