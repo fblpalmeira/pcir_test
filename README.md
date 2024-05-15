@@ -157,11 +157,12 @@ y3$Management <- factor(y3$Management, levels = c("Leave bear alone",
                                                   "Frighten the bear",
                                                   "Educate about bears"))
 
-png(file="output_pci.jpeg", width = 1000, height = 1000)
+png(file="output_pci.jpeg", width = 500, height = 500)
 library(ggplot2)
 p <- ggplot(y3, aes(x = Management, y = Mean, size = PCI)) +
      geom_point(alpha=0.25) +
-     geom_text(aes(label = after_stat(y3$PCI)), nudge_y = 0.35, nudge_x = 0.1, size = 5) +
+     geom_text(aes(label = after_stat(y3$PCI)),
+                   nudge_y = 0.35, nudge_x = 0.1, size = 5) +
      ylab("Action acceptability") + xlab("") + 
      ylim (-3,3) +
      scale_size_area(max_size = 14) +
