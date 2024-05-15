@@ -146,8 +146,11 @@ Create a bubble graph to illustrate the pci indexes in  `R`:
 
 ``` r
 
-# Part 4: Output
-# Create a bubble graph to illustrate the pci indexes in R
+############################################################
+# Part 4: Output                                           #
+#                                                          #
+# Create a bubble graph to illustrate the pci indexes in R #
+############################################################
 
 y3 <- readxl::read_excel("Table2b.xlsx", na = " ")
 head(y3)
@@ -163,7 +166,6 @@ y3$Management <- factor(y3$Management, levels = c("Leave bear alone",
                                                   "Educate about bears"))
 
 png(file="output_pci.jpeg", width = 1000, height = 1000)
-
 library(ggplot2)
 p <- ggplot(y3, aes(x = Management, y = Mean, size = PCI)) +
      geom_point(alpha=0.25) +
@@ -186,7 +188,6 @@ p <- ggplot(y3, aes(x = Management, y = Mean, size = PCI)) +
             legend.title = element_text(size=16), 
             legend.text = element_text(size=14))
 p
-
 dev.off()
 
 ```
