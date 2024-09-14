@@ -222,6 +222,18 @@ devtools::install_github(\"fblpalmeira/pcir\")
 ```
 "
 
+#Write the README.Rmd file to the local repository
+writeLines(readme_rmd_content, file.path(local_dir, "README.Rmd"))
+
+#Add README.md to the Git stage
+repo_url <- git2r::repository(local_dir) git2r::add(repo_url, "README.Rmd")
+
+#Commit the README.Rmd file
+git2r::commit(repo_url, "Add README.Rmd")
+
+#Push the commit to the remote repository
+git2r::push(repo_url)
+
 # Document, build, and install the package
 devtools::document()
 devtools::build()
