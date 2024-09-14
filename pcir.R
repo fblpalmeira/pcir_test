@@ -262,16 +262,16 @@ rmarkdown::render("README.Rmd")
 # Initialize the website structure (only needed once)
 pkgdown::init_site()
 
-# Build the website
-pkgdown::build_site()
-
 # Optional: Add the pkgdown configuration file (this step can be skipped if
 # `pkgdown::init_site()` was used)
 config_content <- "
+url: https://fblpalmeira.github.io/pcir/
+# Template settings
 template:
   bootstrap: 5
   bootswatch: flatly
 
+# Navbar settings
 navbar:
   structure:
     left:
@@ -283,11 +283,12 @@ navbar:
     - icon: fa-github
       href: https://github.com/fblpalmeira/pcir
 
-url: https://fblpalmeira.github.io/pcir/
+# URL of the pkgdown website
+#url: https://fblpalmeira.github.io/pcir/
 "
 
 # Write the configuration file
-writeLines(config_content, file.path(getwd(), "_pkgdown.yml"))
+writeLines(config_content, file.path(local_dir, "_pkgdown.yml"))
 
 # Build the site again to apply the config (if you added it)
 pkgdown::build_site()
