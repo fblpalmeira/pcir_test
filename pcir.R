@@ -170,7 +170,7 @@ RoxygenNote: 7.3.2
 "
 
 # Write the description to a DESCRIPTION file
-writeLines(description_text, "DESCRIPTION")
+writeLines(description_text, file.path(local_dir, "DESCRIPTION"))
 
 # Define the content of the MIT License
 license_text <- "
@@ -198,7 +198,7 @@ SOFTWARE.
 "
 
 # Write the license to a LICENSE file
-writeLines(license_text, "LICENSE")
+writeLines(license_text, file.path(local_dir, "LICENSE"))
 
 # Define the content of README.Rmd
 readme_rmd_content <- "
@@ -260,7 +260,7 @@ writeLines(readme_rmd_content, file.path(local_dir, "README.Rmd"))
 rmarkdown::render("README.Rmd")
 
 # Initialize the website structure (only needed once)
-pkgdown::init_site()
+#pkgdown::init_site()
 
 # Optional: Add the pkgdown configuration file (this step can be skipped if
 # `pkgdown::init_site()` was used)
