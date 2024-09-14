@@ -1,9 +1,16 @@
+library(devtools)
+create_package("D:/Francesca/pcir")
+
+use_package("dplyr")
+use_package("tidyr")
+use_package("ggplot2")
+use_package("Hmisc")
 
 # Load required packages for your functions
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(Hmisc)
+#library(dplyr)
+#library(tidyr)
+#library(ggplot2)
+#library(Hmisc)
 
 # Since the package is already set up, skip the devtools::create() step.
 
@@ -118,6 +125,75 @@ bubble <- function(df3) {
 writeLines(bubble_code, file.path(r_directory, "bubble.R"))
 
 # Since the package structure already exists, no need to recreate DESCRIPTION and LICENSE files.
+
+#' pcir: Potential for Conflict Index in R
+#'
+#' The `pcir` package provides tools for calculating, comparing, and graphing the Potential for Conflict Index (PCI), a descriptive statistical method used in human dimensions research. The concepts of consensus and disagreement/conflict hold relevance across various fields, including economics, political science, psychology, sociology, and natural resources.
+#'
+#' @section pcir functions:
+#' - \code{\link{counting}}: Create a count table with percentages, mean, and standard deviation.
+#' - \code{\link{pci}}: Calculate the Potential for Conflict Index (PCI).
+#' - \code{\link{bubble}}: Create a bubble plot to visualize PCI results.
+#'
+#' @docType package
+#' @name pcir
+NULL
+
+# Load necessary libraries
+library(usethis)
+library(git2r)
+
+# Define your repository details
+repo_url <- "https://github.com/fblpalmeira/pcir.git"
+local_dir <- "D:/Francesca/pcir"
+
+# Clone your GitHub repository to the local directory
+if (!dir.exists(local_dir)) {
+  git2r::clone(repo_url, local_dir)
+}
+
+# Set the working directory to the cloned repository
+setwd(local_dir)
+
+# Define the content of README.md
+readme_content <- "
+# pcir: Potential for Conflict Index in R
+
+[![R-CMD-check](https://github.com/fblpalmeira/pcir)](https://github.com/fblpalmeira/pcir)
+
+`pcir` is an R package designed to help researchers and practitioners calculate, compare, and visualize the Potential for Conflict Index (PCI). The PCI is a descriptive statistical method used to enhance understanding of outcomes in human dimensions research. It is relevant across fields such as economics, political science, psychology, sociology, and natural resources.
+
+## Features
+
+- **counting:** Summarize data by calculating counts, percentages, means, and standard deviations.
+- **pci:** Compute the Potential for Conflict Index from summary data.
+- **bubble:** Visualize PCI results using a bubble plot.
+
+## Installation
+
+You can install the development version of `pcir` directly from GitHub:
+
+```r
+# install.packages(\"devtools\")  # Uncomment if 'devtools' is not installed
+devtools::install_github(\"fblpalmeira/pcir\")
+
+#License
+This package is licensed under the MIT License. See the LICENSE file for more details.
+
+#Contact
+For any questions or inquiries, please contact Francesca Palmeira at francesca@alumni.usp.br. "
+
+#Write the README.md file to the local repository
+writeLines(readme_content, file.path(local_dir, "README.md"))
+
+#Add README.md to the Git stage
+repo <- git2r::repository(local_dir) git2r::add(repo_url, "README.md")
+
+#Commit the README.md file
+git2r::commit(repo, "Add README.md")
+
+#Push the commit to the remote repository
+git2r::push(repo)
 
 # Document, build, and install the package
 devtools::document()
