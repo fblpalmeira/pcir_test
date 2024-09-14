@@ -1,20 +1,3 @@
-# Load the git2r package
-library(git2r)
-
-# Define the URL of your GitHub repository
-repo_url <- "https://github.com/fblpalmeira/pcir"
-
-# Define the directory where you want to clone the repository
-clone_dir <- "D:/Francesca/pcir/cl7"
-
-# Clone the repository to your specified directory
-git2r::clone(repo_url, clone_dir)
-
-# Set the working directory to the cloned repository
-setwd(clone_dir)
-
-# Verify the working directory
-print(getwd())
 
 # Load required packages for your functions
 library(dplyr)
@@ -25,7 +8,7 @@ library(Hmisc)
 # Since the package is already set up, skip the devtools::create() step.
 
 # Set the directory for saving R scripts
-r_directory <- file.path(getwd(), "R")
+r_directory <- file.path("D:/Francesca/pcir", "R")
 
 # Ensure the R directory exists
 if (!dir.exists(r_directory)) {
@@ -137,6 +120,6 @@ writeLines(bubble_code, file.path(r_directory, "bubble.R"))
 # Since the package structure already exists, no need to recreate DESCRIPTION and LICENSE files.
 
 # Document, build, and install the package
-#devtools::document()
+devtools::document()
 devtools::build()
 devtools::install()
