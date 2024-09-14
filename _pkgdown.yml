@@ -1,0 +1,22 @@
+
+url: https://fblpalmeira.github.io/pcir/
+# Template settings
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+# Navbar settings
+navbar:
+  structure:
+    left:
+    - text: Reference
+      href: reference
+    - text: Articles
+      href: articles
+  right:
+    - icon: fa-github
+      href: https://github.com/fblpalmeira/pcir
+
+# URL of the pkgdown website
+#url: https://fblpalmeira.github.io/pcir/
+

@@ -1,12 +1,19 @@
+
 Package: pcir
-Title: What the Package Does (One Line, Title Case)
+Title: Potential for Conflict Index in R
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R:
+    person("Francesca", "Palmeira", email = "francesca@alumni.usp.br",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7597-1157"))
+Description: Potential for Conflict Index in R - pcir, which is a descriptive
+    statistical method used to enhance the understanding of outcomes in human
+    dimensions research. The package equips users with tools required for
+    calculating, comparing, and graphing the potential for conflict. The concepts
+    of consensus and disagreement/conflict hold relevance across various fields,
+    including economics, political science, psychology, sociology, and natural
+    resources.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+
