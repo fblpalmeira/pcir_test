@@ -1,5 +1,10 @@
-pcir: Potential for Conflict Index in R
-================
+---
+title: 'pcir: Potential for Conflict Index in R'
+output: github_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 [![R-CMD-check](https://github.com/fblpalmeira/pcir/main/R-CMD-check.yaml/badge.svg)](https://github.com/fblpalmeira/pcir)
 
@@ -12,13 +17,13 @@ sociology, and natural resources.
 
 ## Features
 
-- **`counting()`** summarize data by calculating counts, percentages,
-  means, and standard deviations.
+-   **`counting()`** summarize data by calculating counts, percentages,
+    means, and standard deviations.
 
-- **`pci()`** compute the Potential for Conflict Index from summary
-  data.
+-   **`pci()`** compute the Potential for Conflict Index from summary
+    data.
 
-- **`bubble()`** visualize PCI results using a bubble plot.
+-   **`bubble()`** visualize PCI results using a bubble plot.
 
 ## Installation
 
@@ -38,4 +43,4 @@ more details.
 ## Contact
 
 For any questions or inquiries, please contact Francesca Palmeira at
-<francesca@alumni.usp.br>.
+[francesca\@alumni.usp.br](mailto:francesca@alumni.usp.br){.email}.

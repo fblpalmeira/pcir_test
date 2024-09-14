@@ -128,10 +128,6 @@ bubble <- function(df3) {
 "
 writeLines(bubble_code, file.path(r_directory, "bubble.R"))
 
-# Add Git operations using usethis and git2r more effectively
-use_git()
-use_github()
-
 # Since the package structure already exists, no need to recreate DESCRIPTION
 # and LICENSE files.
 
@@ -211,8 +207,7 @@ title: 'pcir: Potential for Conflict Index in R'
 output: github_document
 ---
 
-[![R-CMD-check](https://github.com/fblpalmeira/pcir)]
-(https://github.com/fblpalmeira/pcir)
+[![R-CMD-check](https://github.com/fblpalmeira/pcir/main/R-CMD-check.yaml/badge.svg)](https://github.com/fblpalmeira/pcir)
 
 `pcir` is an R package designed to help researchers and practitioners calculate,
 compare, and visualize the Potential for Conflict Index (PCI). The PCI is a
@@ -254,24 +249,15 @@ francesca@alumni.usp.br.
 writeLines(readme_rmd_content, file.path(local_dir, "README.Rmd"))
 
 #Add README.md to the Git stage
-repo_url <- git2r::repository(local_dir) git2r::add(repo_url, "README.Rmd")
-
-library(git2r)
+#repo_url <- git2r::repository(local_dir) git2r::add(repo_url, "README.Rmd")
 
 #Commit the README.Rmd file
-git2r::commit(repo_url, "Add README.Rmd")
+#git2r::commit(repo_url, "Add README.Rmd")
 
 #Push the commit to the remote repository
-git2r::push(repo_url)
+#git2r::push(repo_url)
 
 rmarkdown::render("README.Rmd")
-
-# Install and load the pkgdown package (if not installed)
-if (!requireNamespace("pkgdown", quietly = TRUE)) {
-  install.packages("pkgdown")
-}
-
-library(pkgdown)
 
 # Initialize the website structure (only needed once)
 pkgdown::init_site()
@@ -307,20 +293,20 @@ writeLines(config_content, file.path(getwd(), "_pkgdown.yml"))
 pkgdown::build_site()
 
 # Initialize git repository if not already initialized (skip if already done)
-repo <- repository()
+#repo <- repository()
 
 # Stage all the changes, especially in the 'docs/' folder
-add(repo, "*")
+#add(repo, "*")
 
 # Commit the changes (including the docs folder)
-commit(repo, message = "Build and deploy pkgdown site to GitHub Pages")
+#commit(repo, message = "Build and deploy pkgdown site to GitHub Pages")
 
 # Push the changes to GitHub (you may need to authenticate if this is the first push)
 # Define the remote origin URL (your GitHub repository)
-remote_add(repo, "origin", "https://github.com/fblpalmeira/pcir.git")
+#remote_add(repo, "origin", "https://github.com/fblpalmeira/pcir.git")
 
 # Push to the GitHub repository (you may be prompted for credentials)
-push(repo, name = "origin", refspec = "refs/heads/main")
+#push(repo, name = "origin", refspec = "refs/heads/master")
 
 # Document, build, and install the package
 devtools::document()
