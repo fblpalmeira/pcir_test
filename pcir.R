@@ -1,6 +1,7 @@
 library(devtools)
 create_package("D:/Francesca/pcir")
 
+library(usethis)
 use_package("dplyr")
 use_package("tidyr")
 use_package("ggplot2")
@@ -127,17 +128,9 @@ bubble <- function(df3) {
 "
 writeLines(bubble_code, file.path(r_directory, "bubble.R"))
 
-library(usethis)
-library(git2r)
-
 # Add Git operations using usethis and git2r more effectively
 use_git()
-use_github(repo_spec = "fblpalmeira/pcir")
-
-# Document, build, and install the package
-devtools::document()
-devtools::build()
-devtools::install()
+use_github()
 
 # Since the package structure already exists, no need to recreate DESCRIPTION
 # and LICENSE files.
@@ -262,6 +255,8 @@ writeLines(readme_rmd_content, file.path(local_dir, "README.Rmd"))
 
 #Add README.md to the Git stage
 repo_url <- git2r::repository(local_dir) git2r::add(repo_url, "README.Rmd")
+
+library(git2r)
 
 #Commit the README.Rmd file
 git2r::commit(repo_url, "Add README.Rmd")
