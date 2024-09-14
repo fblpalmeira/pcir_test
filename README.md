@@ -7,9 +7,11 @@
 
 ## Features
 
-- **`counting`:** Summarize data by calculating counts, percentages, means, and standard deviations.
-- **`pci`:** Compute the Potential for Conflict Index from summary data.
-- **`bubble`:** Visualize PCI results using a bubble plot.
+- **`counting()`** summarize data by calculating counts, percentages, means, and standard deviations.
+
+- **`pci()`** compute the Potential for Conflict Index from summary data.
+
+- **`bubble()`** visualize PCI results using a bubble plot.
 
 ## Installation
 

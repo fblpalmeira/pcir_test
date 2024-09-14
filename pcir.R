@@ -176,10 +176,8 @@ readme_content <- "
 You can install the development version of `pcir` directly from GitHub:
 
 ```r
-
 # install.packages(\"devtools\")  # Uncomment if 'devtools' is not installed
 devtools::install_github(\"fblpalmeira/pcir\")
-
 ```
 
 ## License
