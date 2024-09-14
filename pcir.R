@@ -200,6 +200,28 @@ git2r::commit(repo_url, "Add README.md")
 #Push the commit to the remote repository
 git2r::push(repo_url)
 
+# Define the content of README.Rmd
+readme_rmd_content <- "
+---
+title: 'pcir: Potential for Conflict Index in R'
+output: github_document
+---
+
+[![R-CMD-check](https://github.com/fblpalmeira/pcir)](https://github.com/fblpalmeira/pcir)
+
+`pcir` is an R package designed to help researchers and practitioners calculate, compare, and visualize the Potential for Conflict Index (PCI). The PCI is a descriptive statistical method used to enhance understanding of outcomes in human dimensions research. It is relevant across fields such as economics, political science, psychology, sociology, and natural resources.
+
+## Installation
+
+You can install the development version of `pcir` directly from GitHub:
+
+```r
+# Uncomment the line below if devtools is not installed
+# install.packages(\"devtools\")
+devtools::install_github(\"fblpalmeira/pcir\")
+```
+"
+
 # Document, build, and install the package
 devtools::document()
 devtools::build()
