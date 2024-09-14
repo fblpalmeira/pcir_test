@@ -7,9 +7,9 @@
 
 ## Features
 
-- **counting:** Summarize data by calculating counts, percentages, means, and standard deviations.
-- **pci:** Compute the Potential for Conflict Index from summary data.
-- **bubble:** Visualize PCI results using a bubble plot.
+- **`counting`:** Summarize data by calculating counts, percentages, means, and standard deviations.
+- **`pci`:** Compute the Potential for Conflict Index from summary data.
+- **`bubble`:** Visualize PCI results using a bubble plot.
 
 ## Installation
 
@@ -18,9 +18,10 @@ You can install the development version of `pcir` directly from GitHub:
 ```r
 # install.packages("devtools")  # Uncomment if 'devtools' is not installed
 devtools::install_github("fblpalmeira/pcir")
+```
 
-#License
+## License
 This package is licensed under the MIT License. See the LICENSE file for more details.
 
-#Contact
+## Contact
 For any questions or inquiries, please contact Francesca Palmeira at francesca@alumni.usp.br. 

@@ -165,35 +165,42 @@ readme_content <- "
 
 ## Features
 
-- **counting:** Summarize data by calculating counts, percentages, means, and standard deviations.
-- **pci:** Compute the Potential for Conflict Index from summary data.
-- **bubble:** Visualize PCI results using a bubble plot.
+- **`counting()`** summarize data by calculating counts, percentages, means, and standard deviations.
+
+- **`pci()`** compute the Potential for Conflict Index from summary data.
+
+- **`bubble()`** visualize PCI results using a bubble plot.
 
 ## Installation
 
 You can install the development version of `pcir` directly from GitHub:
 
 ```r
+
 # install.packages(\"devtools\")  # Uncomment if 'devtools' is not installed
 devtools::install_github(\"fblpalmeira/pcir\")
 
-#License
+```
+
+## License
+
 This package is licensed under the MIT License. See the LICENSE file for more details.
 
-#Contact
+## Contact
+
 For any questions or inquiries, please contact Francesca Palmeira at francesca@alumni.usp.br. "
 
 #Write the README.md file to the local repository
 writeLines(readme_content, file.path(local_dir, "README.md"))
 
 #Add README.md to the Git stage
-repo <- git2r::repository(local_dir) git2r::add(repo_url, "README.md")
+repo_url <- git2r::repository(local_dir) git2r::add(repo_url, "README.md")
 
 #Commit the README.md file
-git2r::commit(repo, "Add README.md")
+git2r::commit(repo_url, "Add README.md")
 
 #Push the commit to the remote repository
-git2r::push(repo)
+git2r::push(repo_url)
 
 # Document, build, and install the package
 devtools::document()
