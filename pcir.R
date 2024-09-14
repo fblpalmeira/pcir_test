@@ -139,6 +139,58 @@ writeLines(bubble_code, file.path(r_directory, "bubble.R"))
 #' @name pcir
 NULL
 
+# Define the content of the DESCRIPTION file
+description_text <- "
+Package: pcir2
+Title: Potential for Conflict Index in R - pcir
+Version: 0.0.0.9000
+Authors@R:
+    person(\"Francesca\", \"Palmeira\", , \"francesca@alumni.usp.br\",
+    role = c(\"aut\", \"cre\"),comment = c(ORCID = \"0000-0002-7597-1157\"))
+Description: Potential for Conflict Index in R - pcir, which is a descriptive
+    statistical method used to enhance the understanding of outcomes in human
+    dimensions research. The package will equip users with the tools required for
+    calculating, comparing, and graphing the potential for conflict. The concepts
+    of consensus and disagreement/conflict hold relevance across various fields,
+    including economics, political science, psychology, sociology, and natural
+    resources.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+"
+
+# Write the description to a DESCRIPTION file
+writeLines(description_text, "DESCRIPTION")
+
+# Define the content of the MIT License
+license_text <- "
+MIT License
+
+Copyright (c) 2024 Francesca Palmeira
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"
+
+# Write the license to a LICENSE file
+writeLines(license_text, "LICENSE")
+
 # Load necessary libraries
 library(usethis)
 library(git2r)
@@ -155,51 +207,6 @@ if (!dir.exists(local_dir)) {
 # Set the working directory to the cloned repository
 setwd(local_dir)
 
-# Define the content of README.md
-readme_content <- "
-# pcir: Potential for Conflict Index in R
-
-[![R-CMD-check](https://github.com/fblpalmeira/pcir)](https://github.com/fblpalmeira/pcir)
-
-`pcir` is an R package designed to help researchers and practitioners calculate, compare, and visualize the Potential for Conflict Index (PCI). The PCI is a descriptive statistical method used to enhance understanding of outcomes in human dimensions research. It is relevant across fields such as economics, political science, psychology, sociology, and natural resources.
-
-## Features
-
-- **`counting()`** summarize data by calculating counts, percentages, means, and standard deviations.
-
-- **`pci()`** compute the Potential for Conflict Index from summary data.
-
-- **`bubble()`** visualize PCI results using a bubble plot.
-
-## Installation
-
-You can install the development version of `pcir` directly from GitHub:
-
-```r
-# install.packages(\"devtools\")  # Uncomment if 'devtools' is not installed
-devtools::install_github(\"fblpalmeira/pcir\")
-```
-
-## License
-
-This package is licensed under the MIT License. See the LICENSE file for more details.
-
-## Contact
-
-For any questions or inquiries, please contact Francesca Palmeira at francesca@alumni.usp.br. "
-
-#Write the README.md file to the local repository
-writeLines(readme_content, file.path(local_dir, "README.md"))
-
-#Add README.md to the Git stage
-repo_url <- git2r::repository(local_dir) git2r::add(repo_url, "README.md")
-
-#Commit the README.md file
-git2r::commit(repo_url, "Add README.md")
-
-#Push the commit to the remote repository
-git2r::push(repo_url)
-
 # Define the content of README.Rmd
 readme_rmd_content <- "
 ---
@@ -207,18 +214,23 @@ title: 'pcir: Potential for Conflict Index in R'
 output: github_document
 ---
 
-[![R-CMD-check](https://github.com/fblpalmeira/pcir)](https://github.com/fblpalmeira/pcir)
+[![R-CMD-check](https://github.com/fblpalmeira/pcir)]
+(https://github.com/fblpalmeira/pcir)
 
-`pcir` is an R package designed to help researchers and practitioners calculate, compare, and visualize the Potential for Conflict Index (PCI). The PCI is a descriptive statistical method used to enhance understanding of outcomes in human dimensions research. It is relevant across fields such as economics, political science, psychology, sociology, and natural resources.
+`pcir` is an R package designed to help researchers and practitioners calculate,
+compare, and visualize the Potential for Conflict Index (PCI). The PCI is a
+descriptive statistical method used to enhance understanding of outcomes in
+human dimensions research. It is relevant across fields such as economics,
+political science, psychology, sociology, and natural resources.
 
 ## Features
 
-- **`counting()`** summarize data by calculating counts, percentages, means, and standard deviations.
+- **`counting()`** summarize data by calculating counts, percentages, means, and
+standard deviations.
 
 - **`pci()`** compute the Potential for Conflict Index from summary data.
 
 - **`bubble()`** visualize PCI results using a bubble plot.
-
 
 ## Installation
 
@@ -232,11 +244,13 @@ devtools::install_github(\"fblpalmeira/pcir\")
 
 ## License
 
-This package is licensed under the MIT License. See the LICENSE file for more details.
+This package is licensed under the MIT License. See the LICENSE file for more
+details.
 
 ## Contact
 
-For any questions or inquiries, please contact Francesca Palmeira at francesca@alumni.usp.br. "
+For any questions or inquiries, please contact Francesca Palmeira at
+francesca@alumni.usp.br. "
 
 #Write the README.Rmd file to the local repository
 writeLines(readme_rmd_content, file.path(local_dir, "README.Rmd"))
@@ -250,8 +264,65 @@ git2r::commit(repo_url, "Add README.Rmd")
 #Push the commit to the remote repository
 git2r::push(repo_url)
 
-```r
 rmarkdown::render("README.Rmd")
+
+# Install and load the pkgdown package (if not installed)
+if (!requireNamespace("pkgdown", quietly = TRUE)) {
+  install.packages("pkgdown")
+}
+
+library(pkgdown)
+
+# Set the working directory to the local repository
+setwd("D:/Francesca/pcir")  # Update to your local directory
+
+# Initialize the website structure (only needed once)
+pkgdown::init_site()
+
+# Build the website
+pkgdown::build_site()
+
+# Optional: Add the pkgdown configuration file (this step can be skipped if `pkgdown::init_site()` was used)
+config_content <- "
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+navbar:
+  structure:
+    left:
+    - text: Reference
+      href: reference
+    - text: Articles
+      href: articles
+  right:
+    - icon: fa-github
+      href: https://github.com/fblpalmeira/pcir
+
+url: https://fblpalmeira.github.io/pcir/
+"
+
+# Write the configuration file
+writeLines(config_content, file.path(getwd(), "_pkgdown.yml"))
+
+# Build the site again to apply the config (if you added it)
+pkgdown::build_site()
+
+# Initialize git repository if not already initialized (skip if already done)
+repo <- repository()
+
+# Stage all the changes, especially in the 'docs/' folder
+add(repo, "*")
+
+# Commit the changes (including the docs folder)
+commit(repo, message = "Build and deploy pkgdown site to GitHub Pages")
+
+# Push the changes to GitHub (you may need to authenticate if this is the first push)
+# Define the remote origin URL (your GitHub repository)
+remote_add(repo, "origin", "https://github.com/fblpalmeira/pcir.git")
+
+# Push to the GitHub repository (you may be prompted for credentials)
+push(repo, name = "origin", refspec = "refs/heads/main")
 
 # Document, build, and install the package
 devtools::document()

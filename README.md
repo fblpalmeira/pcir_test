@@ -1,4 +1,3 @@
-
 # pcir: Potential for Conflict Index in R
 
 [![R-CMD-check](https://github.com/fblpalmeira/pcir)](https://github.com/fblpalmeira/pcir)
@@ -7,23 +6,25 @@
 
 ## Features
 
-- **`counting()`** summarize data by calculating counts, percentages, means, and standard deviations.
+-   **`counting()`** summarize data by calculating counts, percentages, means, and standard deviations.
 
-- **`pci()`** compute the Potential for Conflict Index from summary data.
+-   **`pci()`** compute the Potential for Conflict Index from summary data.
 
-- **`bubble()`** visualize PCI results using a bubble plot.
+-   **`bubble()`** visualize PCI results using a bubble plot.
 
 ## Installation
 
 You can install the development version of `pcir` directly from GitHub:
 
-```r
+``` r
 # install.packages("devtools")  # Uncomment if 'devtools' is not installed
 devtools::install_github("fblpalmeira/pcir")
 ```
 
 ## License
+
 This package is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
-For any questions or inquiries, please contact Francesca Palmeira at francesca@alumni.usp.br. 
+
+For any questions or inquiries, please contact Francesca Palmeira at [francesca\@alumni.usp.br](mailto:francesca@alumni.usp.br){.email}.
