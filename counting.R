@@ -7,7 +7,7 @@
 #'
 #' @param df1 A data frame containing the data to be processed. The data frame
 #' should have at least 5 columns to select from.
-#' @return A data frame with computed statistics, including counts, percentages,
+#' @return A data frame with computed statisticss, including counts, percentages,
 #' mean, and standard deviation.
 #' @examples
 #' df1 <- data.frame(A = c(-1, 2, 2, 3, -1), B = c(-1, 2, 3, -1, 2),

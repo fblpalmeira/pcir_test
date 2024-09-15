@@ -32,48 +32,43 @@ devtools::install_github("fblpalmeira/pcir")
 
 ## Usage
 
-# Load the Package
+Load the Package:
 
 ``` r
-
 library(pcir)
 ```
 
-# Example dataset
+Example dataset:
 
 ``` r
-
 df1 <- data.frame(
   A = c(-1, 2, 2, 3, -1),
   B = c(-1, 2, 3, -1, 2),
   C = c(1, 2, -2, 3, -1),
   D = c(3, 2, 1, -1, -2),
   E = c(2, 3, 1, -1, -3)
-)
+  )
 ```
 
-# Counting function
+Counting function:
 
 ``` r
-
 # The counting function summarizes data by counts, percentages, means, and standard deviations
 df_count <- counting(df1)
 df_count
 ```
 
-# pci function
+PCI function:
 
 ``` r
-
 # The pci function calculates the Potential for Conflict Index (PCI)
 df_pci <- pci(df_count)
 df_pci
 ```
 
-# Bubble plot function
+Bubble plot function:
 
 ``` r
-
 # The bubble function creates a bubble plot to visualize the PCI results
 bubble_plot <- bubble(df_pci)
 bubble_plot # Display the bubble plot
