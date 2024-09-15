@@ -251,7 +251,7 @@ Version: 0.0.0.9000
 Authors@R:
     person(\"Francesca\", \"Palmeira\", email = \"francesca@alumni.usp.br\",
     role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-7597-1157\"))
-Description: Potential for Conflict Index in R - pcir, which is a descriptive
+Description: Potential for Conflict Index is a descriptive
     statistical method used to enhance the understanding of outcomes in human
     dimensions research. The package equips users with tools required for
     calculating, comparing, and graphing the potential for conflict. The concepts
