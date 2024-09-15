@@ -3,3 +3,7 @@
 export(bubble)
 export(counting)
 export(pci)
+import(Hmisc)
+import(dplyr)
+import(ggplot2)
+import(tidyr)

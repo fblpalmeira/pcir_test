@@ -15,6 +15,9 @@ if (!dir.exists(r_directory)) {
   dir.create(r_directory)
 }
 
+# Set the local directory
+local_dir <- "D:/Francesca/pcir"
+
 # Define and save the counting function
 counting_code <- "
 #' Create a Count Table with Percentages, Mean, and SD
@@ -52,14 +55,6 @@ counting <- function(df1) {
 }
 "
 writeLines(counting_code, "counting.R")
-
-# Define the R directory where the script will be saved
-r_directory <- file.path("D:/Francesca/pcir", "R")
-
-# Ensure the R directory exists
-if (!dir.exists(r_directory)) {
-  dir.create(r_directory)
-}
 
 # Content for the pcir.package.R file
 pcir_package_code <- "
@@ -173,7 +168,6 @@ bubble <- function(df3) {
 # Write the content to a file called pcir.package.R
 writeLines(pcir_package_code, file.path(r_directory, "pcir.package.R"))
 
-
 # Define the content of the DESCRIPTION file
 description_text <- "
 Package: pcir
@@ -260,8 +254,59 @@ You can install the development version of `pcir` directly from GitHub:
 devtools::install_github(\"fblpalmeira/pcir\")
 ```
 
-## Installation
+## Usage
 
+# Load the Package
+
+```r
+
+library(pcir)
+
+```
+
+# Example dataset
+
+```r
+
+df1 <- data.frame(
+  A = c(-1, 2, 2, 3, -1),
+  B = c(-1, 2, 3, -1, 2),
+  C = c(1, 2, -2, 3, -1),
+  D = c(3, 2, 1, -1, -2),
+  E = c(2, 3, 1, -1, -3)
+)
+
+```
+
+# Counting function
+
+```r
+
+# The counting function summarizes data by counts, percentages, means, and standard deviations
+df_count <- counting(df1)
+df_count
+
+```
+
+# pci function
+
+```r
+
+# The pci function calculates the Potential for Conflict Index (PCI)
+df_pci <- pci(df_count)
+df_pci
+
+```
+
+# Bubble plot function
+
+```r
+
+# The bubble function creates a bubble plot to visualize the PCI results
+bubble_plot <- bubble(df_pci)
+bubble_plot # Display the bubble plot
+
+```
 
 ## License
 
