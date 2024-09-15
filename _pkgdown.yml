@@ -1,5 +1,4 @@
 
-url: https://fblpalmeira.github.io/pcir/
 # Template settings
 template:
   bootstrap: 5
@@ -18,5 +17,5 @@ navbar:
       href: https://github.com/fblpalmeira/pcir
 
 # URL of the pkgdown website
-#url: https://fblpalmeira.github.io/pcir/
+url: https://fblpalmeira.github.io/pcir/
 
