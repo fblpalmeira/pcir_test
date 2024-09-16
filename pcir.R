@@ -332,7 +332,6 @@ cat("The GitHub Issues spreadsheet has been created at", file_path, "\n")
 # Define the content of README.Rmd
 readme_rmd_content <- "
 ---
-title: 'pcir: Potential for Conflict Index in R'
 output: github_document
 ---
 
@@ -347,11 +346,7 @@ eval = TRUE)
 library(pcir)
 ```
 
-# pcir <a href=\"https://fblpalmeira.github.io/pcir/\"><img src=\"man/figures/pcir_logo.png\" alt=\"pcir website\" align=\"right\" height=\"139\"/></a>
-
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/fblpalmeira/pcir/main/R-CMD-check.yaml/badge.svg)](https://github.com/fblpalmeira/pcir)
-<!-- badges: end -->
+# pcir: Potential for Conflict Index in R <a href=\"https://fblpalmeira.github.io/pcir/\"><img src=\"man/figures/pcir_logo.png\" alt=\"pcir website\" align=\"right\" height=\"139\"/></a>
 
 ## Overview
 
@@ -485,6 +480,11 @@ writeLines(config_content, file.path(local_dir, "_pkgdown.yml"))
 
 # Build the site again to apply the config (if you added it)
 pkgdown::build_site()
+pkgbuild::check_build_tools(debug = TRUE)
+Sys.setenv(PATH = paste(Sys.getenv("PATH"), "C:/rtools40/usr/bin", sep=";"))
+install.packages("devtools")
+devtools::find_rtools()  # Check if Rtools is correctly detected
+devtools::build()
 
 # Initialize git repository if not already initialized (skip if already done)
 #repo <- repository()
