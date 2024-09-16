@@ -12,17 +12,21 @@ counting(df1)
 \item{df1}{A data frame containing the data to be processed.}
 }
 \value{
-A data frame with computed statistics, including counts, percentages, mean, and standard deviation.
+A data frame with computed statistics, including counts, percentages,
+mean, and standard deviation.
 
 A data frame with computed statistics.
 }
 \description{
-This function takes a data frame, transforms it by computing counts, percentages, mean, and standard deviation for specified columns. It helps in summarizing the data to understand the distribution and variation.
+This function takes a data frame, transforms it by computing counts, percentages,
+mean, and standard deviation for specified columns. It helps in summarizing
+the data to understand the distribution and variation.
 
 Create a count table with percentages, mean, and standard deviation.
 }
 \examples{
-df1 <- data.frame(A = c(-1, 2, 2, 3, -1), B = c(-1, 2, 3, -1, 2), C = c(1, 2, -2, 3, -1), D = c(3, 2, 1, -1, -2), E = c(2, 3, 1, -1, -3))
+df1 <- data.frame(A = c(-1, 2, 2, 3, -1), B = c(-1, 2, 3, -1, 2),
+C = c(1, 2, -2, 3, -1), D = c(3, 2, 1, -1, -2), E = c(2, 3, 1, -1, -3))
 result <- counting(df1)
 print(result)
 df1 <- data.frame(A = c(-1, 2, 2, 3, -1), B = c(-1, 2, 3, -1, 2),

@@ -17,7 +17,9 @@ A ggplot2 object representing the bubble plot.
 A ggplot2 object representing the bubble plot.
 }
 \description{
-This function generates a bubble plot to visualize the results of the PCI calculation. It shows the mean action acceptability on the y-axis and the PCI value as the size of the bubbles.
+This function generates a bubble plot to visualize the results of the PCI
+calculation. It shows the mean action acceptability on the y-axis and the PCI
+value as the size of the bubbles.
 
 Create a bubble plot to visualize PCI results.
 }

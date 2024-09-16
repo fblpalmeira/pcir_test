@@ -2,7 +2,7 @@
 % Please edit documentation in R/pci.R, R/pcir.package.R
 \name{pci}
 \alias{pci}
-\title{Calculate the Potential for Conflict Index (PCI)}
+\title{PCI Function}
 \usage{
 pci(df2)
 
@@ -17,14 +17,13 @@ A data frame with the calculated PCI values for each group.
 A data frame with the calculated PCI values for each group.
 }
 \description{
-This function calculates the Potential for Conflict Index (PCI) based on the counts provided. PCI is useful in understanding the level of consensus and conflict in the data.
+Calculate the Potential for Conflict Index (PCI).
 
 Calculate the Potential for Conflict Index (PCI).
 }
 \examples{
 df2 <- counting(df1)
-pci_values <- pci(df2)
-print(pci_values)
+pci(df2)
 df2 <- counting(df1)
 pci(df2)
 }

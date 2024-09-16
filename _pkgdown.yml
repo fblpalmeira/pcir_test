@@ -8,10 +8,8 @@ template:
 navbar:
   structure:
     left:
-    - text: Reference
-      href: reference
-    - text: Articles
-      href: articles
+      - Reference: reference
+      - Articles: articles
   right:
     - icon: fa-github
       href: https://github.com/fblpalmeira/pcir

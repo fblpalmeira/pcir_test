@@ -22,14 +22,14 @@ counting <- function(df1) {
     group_by(name, value) %>%
     summarise(Count = n()) %>%
     group_by(name) %>%
-    mutate(% = 100 * (Count / sum(Count)),
+    mutate(`%` = 100 * (Count / sum(Count)),
            Mean = weighted.mean(value, Count),
            SD = sqrt(Hmisc::wtd.var(value, Count)),
            Total = sum(Count)) %>%
     ungroup() %>%
     pivot_wider(names_from = 'value',
                 names_sep = ' ',
-                values_from = c('Count', '%'),
+                values_from = c('Count', `%`),
                 names_vary = 'slowest')
 }
 

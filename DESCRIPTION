@@ -2,6 +2,7 @@
 Package: pcir
 Title: Potential for Conflict Index in R
 Version: 0.0.0.9000
+Year: 2024
 Authors@R:
     person("Francesca", "Palmeira", email = "francesca@alumni.usp.br",
     role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7597-1157"))
