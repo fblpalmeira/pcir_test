@@ -339,12 +339,10 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = '#>'
-fig.path = 'man/figures/logo_pcir' # Remove the trailing comma
-out.width = '100%'
+  comment = '#>',
+fig.path = 'man/figures/logo_pcir.png', # Remove the trailing comma
+out.width = '100%',
 eval = TRUE)
-
-
 
 library(pcir)
 ```

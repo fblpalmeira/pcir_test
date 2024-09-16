@@ -1,6 +1,5 @@
 
 ---
-title: 'pcir: Potential for Conflict Index in R'
 output: github_document
 ---
 
@@ -12,16 +11,10 @@ fig.path = 'man/figures/logo_pcir.png', # Remove the trailing comma
 out.width = '100%',
 eval = TRUE)
 
-
-
 library(pcir)
 ```
 
-# pcir <a href="https://fblpalmeira.github.io/pcir/"><img src="man/figures/pcir_logo.png" alt="pcir website" align="right" height="139"/></a>
-
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/fblpalmeira/pcir/main/R-CMD-check.yaml/badge.svg)](https://github.com/fblpalmeira/pcir)
-<!-- badges: end -->
+# pcir: Potential for Conflict Index in R <a href="https://fblpalmeira.github.io/pcir/"><img src="man/figures/pcir_logo.png" alt="pcir website" align="right" height="139"/></a>
 
 ## Overview
 
