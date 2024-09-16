@@ -79,20 +79,6 @@ bubble_plot # Display the bubble plot
 ``` r
 # If you use the `pcir` package in your work, please cite it as follows:
 citation(package = 'pcir')
-
-To cite the 'pcir' package in publications, please use the following:
-
-  Palmeira F (2024). _pcir: Potential for Conflict
-  Index in R_. R package version 0.0.0.9000.
-
-The BibTeX entry for LaTeX users is
-
-  @Manual{,
-    title = {pcir: Potential for Conflict Index in R},
-    author = {Francesca Palmeira},
-    year = {2024},
-    note = {R package version 0.0.0.9000},
-  }
 ```
 
 ## License

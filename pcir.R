@@ -286,7 +286,6 @@ writeLines(license_text, file.path(local_dir, "LICENSE"))
 
 # Create a citation entry for the pcir package
 citation_text <- citation("pcir")
-# citation(package = 'pcir')
 
 # Convert the citation list to a string with each element on a new line
 citation_text_str <- paste(citation_text, collapse = "\n")
@@ -296,6 +295,39 @@ cat(citation_text_str, file = "citation.txt")
 
 # You can also print it to the console to view
 print(citation_text)
+
+# Install required packages if not already installed
+install.packages("gh")        # For interacting with the GitHub API
+install.packages("writexl")   # For writing to Excel files
+
+# Load necessary libraries
+library(gh)
+library(writexl)
+
+# Define your repository details
+repo <- "fblpalmeira/pcir"  # Replace with your GitHub repository, e.g., 'user/repo'
+
+# Fetch the issues from the repository
+issues <- gh("GET /repos/:owner/:repo/issues", owner = "fblpalmeira", repo = "pcir")
+
+# Process the issues into a data frame
+issues_df <- data.frame(
+  number = sapply(issues, function(x) x$number),
+  title = sapply(issues, function(x) x$title),
+  state = sapply(issues, function(x) x$state),
+  created_at = sapply(issues, function(x) x$created_at),
+  updated_at = sapply(issues, function(x) x$updated_at),
+  body = sapply(issues, function(x) x$body)
+)
+
+# Define the file path for the spreadsheet
+file_path <- file.path(getwd(), "github_issues.xlsx")
+
+# Write the issues data to an Excel file
+write_xlsx(issues_df, file_path)
+
+# Output message indicating the spreadsheet has been created
+cat("The GitHub Issues spreadsheet has been created at", file_path, "\n")
 
 # Define the content of README.Rmd
 readme_rmd_content <- "
@@ -380,20 +412,6 @@ bubble_plot # Display the bubble plot
 ```r
 # If you use the `pcir` package in your work, please cite it as follows:
 citation(package = 'pcir')
-
-To cite the 'pcir' package in publications, please use the following:
-
-  Palmeira F (2024). _pcir: Potential for Conflict
-  Index in R_. R package version 0.0.0.9000.
-
-The BibTeX entry for LaTeX users is
-
-  @Manual{,
-    title = {pcir: Potential for Conflict Index in R},
-    author = {Francesca Palmeira},
-    year = {2024},
-    note = {R package version 0.0.0.9000},
-  }
 ```
 
 ## License
@@ -418,7 +436,6 @@ writeLines(readme_rmd_content, file.path(local_dir, "README.Rmd"))
 
 #Push the commit to the remote repository
 #git2r::push(repo_url)
-
 rmarkdown::render("README.Rmd")
 
 # Initialize the website structure (only needed once)
