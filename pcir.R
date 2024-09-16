@@ -238,22 +238,19 @@ writeLines(pcir_package_code, file.path(r_directory, "pcir.package.R"))
 # Define the content of the DESCRIPTION file
 description_text <- "
 Package: pcir
+Type: Package
 Title: Potential for Conflict Index in R
-Version: 0.0.0.9000
-Authors@R:
-    person(\"Francesca\", \"Palmeira\", email = \"francesca@alumni.usp.br\",
-    role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-7597-1157\"))
-Description: Potential for Conflict Index is a descriptive
-    statistical method used to enhance the understanding of outcomes in human
-    dimensions research. The package equips users with tools required for
-    calculating, comparing, and graphing the potential for conflict. The concepts
-    of consensus and disagreement/conflict hold relevance across various fields,
-    including economics, political science, psychology, sociology, and natural
-    resources.
-License: MIT + file LICENSE
+Version: 0.1.0
+Author: Francesca Palmeira [aut, cre]
+Maintainer: Francesca Palmeira <francesca@alumni.usp.br>
+Description: An R package to calculate, compare, and visualize the Potential for Conflict Index (PCI).
+License: MIT
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/fblpalmeira/pcir
+BugReports: https://github.com/fblpalmeira/pcir/issues
+Date: 2024-09-12
 "
 
 # Write the description to a DESCRIPTION file
@@ -289,6 +286,7 @@ writeLines(license_text, file.path(local_dir, "LICENSE"))
 
 # Create a citation entry for the pcir package
 citation_text <- citation("pcir")
+# citation(package = 'pcir')
 
 # Convert the citation list to a string with each element on a new line
 citation_text_str <- paste(citation_text, collapse = "\n")
