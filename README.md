@@ -39,7 +39,7 @@ Calculate the potential conflict index for each question / Write [(Table
 Create a bubble chart using the indices / Save [(Figure
 1)](https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png).
 
-<img src='https://github.com/fblpalmeira/pcir/tree/master/man/figures/diagrammer_pcir.png'>
+<img src='https://github.com/fblpalmeira/pcir/man/figures/diagrammer_pcir.png'>
 
 **Figure 2.** Workflow of the ‘pcir’ package.
 
@@ -107,7 +107,7 @@ bubble_plot <- bubble(df_pci)
 bubble_plot # Display the bubble plot
 ```
 
-<img src='https://github.com/fblpalmeira/pcir/tree/master/man/figures/output_pci.png'>
+<img src='https://github.com/fblpalmeira/pcir/man/figures/output_pci.png'>
 
 **Figure 3.** Bubble graph illustranting the Potencial Conflict Indices.
 
