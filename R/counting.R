@@ -16,8 +16,8 @@
 #' print(result)
 #' @export
 counting <- function(df1) {
-  df1 %>%
-    select(2:6) %>%
+  df1 [,-1] %>%
+    #select(2:6) %>%
     pivot_longer(everything()) %>%
     group_by(name, value) %>%
     summarise(Count = n()) %>%

@@ -6,9 +6,42 @@
 `pcir` is an R package designed to help researchers and practitioners
 calculate, compare, and visualize the Potential for Conflict Index
 (PCI). The PCI is a descriptive statistical method used to enhance
-understanding of outcomes in human dimensions research. It is relevant
-across fields such as economics, political science, psychology,
-sociology, and natural resources.
+understanding of outcomes in human dimensions research [(Manfredo et
+al. 2003)](https://www.tandfonline.com/doi/abs/10.1080/10871200304310)
+and [(Vaske et
+al. 2010)](https://www.tandfonline.com/doi/abs/10.1080/01490401003712648).
+The package will equip users with the tools required for calculating,
+comparing, and graphing the potential for conflict. The concepts of
+consensus and disagreement or conflict hold relevance across various
+fields, including economics, political science, psychology, sociology,
+and natural resources. It is worth noting that although PCI can
+currently be computed using software such as Excel, SPSS, and SAS, there
+is no dedicated R package available for conducting this specific
+analysis.
+
+Additional information: - [rOpenSci Champions
+Program](https://ropensci.org/champions/) - [Introducing rOpenSci
+Champions - Cohort
+2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)
+
+## Theoretical approach
+
+**Figure 1.** Likert scales of the Potential for Conflict Index (PCI).
+
+## Workflow
+
+Stages of the ‘pcir’ package: 1. Read the data input from the
+interviews; 2. Count the frequencies of responses within each question /
+Write [(Table
+1)](https://github.com/fblpalmeira/pcir/blob/main/data/Table1.xlsx); 3.
+Calculate the potential conflict index for each question / Write [(Table
+2)](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx); 4.
+Create a bubble chart using the indices / Save [(Figure
+1)](https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png).
+
+<img src='https://github.com/fblpalmeira/pcir/man/figures/diagrammer_pcir.png'>
+
+**Figure 2.** Workflow of the ‘pcir’ package.
 
 ## Features
 
@@ -32,15 +65,15 @@ devtools::install_github("fblpalmeira/pcir")
 
 ## Usage
 
-Load the Package:
+Load the package if pcir is already installed.
 
 ``` r
+# Load the Package:
 library(pcir)
 ```
 
-Example dataset:
-
 ``` r
+# Example dataset:
 df1 <- data.frame(
   A = c(-1, 2, 2, 3, -1),
   B = c(-1, 2, 3, -1, 2),
@@ -74,11 +107,45 @@ bubble_plot <- bubble(df_pci)
 bubble_plot # Display the bubble plot
 ```
 
+<img src='https://github.com/fblpalmeira/pcir/man/figures/output_pci.png'>
+
+**Figure 3.** Bubble graph illustranting the Potencial Conflict Indices.
+
+## References
+
+Manfredo, M., Vaske, J., Teel, T. (2003). [The potential for conflict
+index: A graphic approach to practical significance of human dimensions
+research](https://www.tandfonline.com/doi/abs/10.1080/10871200304310).
+Human Dimensions of Wildlife, 8(3), 219-228.
+
+Vaske, J. J., Beaman, J., Barreto, H., Shelby, L. B. (2010). [An
+extension and further validation of the potential for conflict
+index](https://www.tandfonline.com/doi/abs/10.1080/01490401003712648).
+Leisure Sciences, 32(3), 240-254.
+
 ## Citation
 
 ``` r
 # If you use the `pcir` package in your work, please cite it as follows:
 citation(package = 'pcir')
+```
+
+``` r
+To cite the 'pcir' package in publications, use:
+
+  Palmeira F (2024). _pcir: Potential for Conflict Index in
+  R_. R package version 0.1.0,
+  <https://github.com/fblpalmeira/pcir>.
+
+The BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {pcir: Potential for Conflict Index in R},
+    author = {Francesca Palmeira},
+    year = {2024},
+    note = {R package version 0.1.0},
+    url = {https://github.com/fblpalmeira/pcir},
+  }
 ```
 
 ## License
