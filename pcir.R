@@ -445,7 +445,7 @@ Bubble plot function:
 bubble_plot <- bubble(df_pci)
 bubble_plot # Display the bubble plot
 ```
-<img src='https://github.com/fblpalmeira/pcir/man/figures/output_pci.png'>
+<img src='https://github.com/fblpalmeira/pcir/blob/master/man/figures/output_pci.png'>
 
 **Figure 3.** Bubble graph illustranting the Potencial Conflict Indices.
 
