@@ -379,7 +379,7 @@ Stages of the 'pcir' package:
 3. Calculate the potential conflict index for each question / Write [(Table 2)](https://github.com/fblpalmeira/pcir/blob/main/data/Table2.xlsx);
 4. Create a bubble chart using the indices / Save [(Figure 1)](https://github.com/fblpalmeira/pcir/blob/main/data/output_pci.png).
 
-<img src='https://github.com/fblpalmeira/pcir/man/figures/diagrammer_pcir.png'>
+<img src=\"man/figures/diagrammer_pcir.png\">
 
 **Figure 2.** Workflow of the 'pcir' package.
 
