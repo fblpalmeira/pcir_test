@@ -7,8 +7,8 @@
 calculate, compare, and visualize the Potential for Conflict Index
 (PCI). The PCI is a descriptive statistical method used to enhance
 understanding of outcomes in human dimensions research [(Manfredo et
-al. 2003)](https://www.tandfonline.com/doi/abs/10.1080/10871200304310)
-and [(Vaske et
+al. 2003;](https://www.tandfonline.com/doi/abs/10.1080/10871200304310)
+[Vaske et
 al. 2010)](https://www.tandfonline.com/doi/abs/10.1080/01490401003712648).
 The package will equip users with the tools required for calculating,
 comparing, and graphing the potential for conflict. The concepts of
@@ -150,8 +150,9 @@ The BibTeX entry for LaTeX users is
 
 ## License
 
-This package is licensed under the MIT License. See the LICENSE file for
-more details.
+This package is licensed under the [MIT
+License](https://github.com/fblpalmeira/pcir?tab=MIT-1-ov-file). See the
+LICENSE file for more details.
 
 ## Contact
 

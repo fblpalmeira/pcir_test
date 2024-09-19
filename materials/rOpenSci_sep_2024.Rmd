@@ -1,0 +1,65 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["rladies", "rladies-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(tidy = FALSE, eval = FALSE)
+```
+class: center, middle
+
+#**rOpenSci Champions 2023-2024**
+##**Second Cohort Meeting**
+<img src="https://camo.githubusercontent.com/0c3a96c0532842896ac9753b030f5b4bb7652852682a654ead88af1de8cee83e/68747470733a2f2f7261776769742e636f6d2f726f70656e7363692f6c6f676f732f6d61737465722f69636f6e5f6c6574746572696e675f636f6c6f722e737667" width="500" height="250"> 
+
+###Francesca Belem Lopes Palmeira 
+####[francesca@alumni.usp.br](mailto:francesca@alumni.usp.br) 
+#### September, 2024
+---
+class: left, middle
+
+background-image: url("pcir_logo.png")
+background-position: 92% 2%
+background-size: 15% 
+
+###**Project progress:**
+####**Overview**
+[pcir](https://fblpalmeira.github.io/pcir/) is an R package designed to help researchers and practitioners calculate, compare, and visualize the Potential for Conflict Index (PCI). The PCI is a descriptive statistical method used to enhance understanding of outcomes in human dimensions research developed by [(Manfredo et al. 2003)](https://www.tandfonline.com/doi/abs/10.1080/10871200304310).
+
+The package will equip users with the tools required for calculating, comparing, and graphing the potential for conflict. The concepts of consensus and disagreement or conflict hold relevance across various fields, including economics, political science, psychology, sociology, and natural resources. 
+
+It is worth noting that although PCI can currently be computed using software such as Excel, SPSS, and SAS, there is no dedicated R package available for conducting this specific analysis.
+
+---
+class: left, middle
+
+###**Project progress:**
+####**Principal challenges**
+
+- Develop the statistical equations into R functions;
+
+- Transform the R functions in a package;
+
+- Learn to work on the [GitHub page](https://fblpalmeira.github.io/pcir/) using the Git interface. 
+
+---
+class: left, middle
+
+###**Outreach Plan:** 
+
+- Translation projects of the R Community (rOpenSci) to Portuguese;
+
+- Promote online events (e.g. RLadies or rOpenSci) to instruct users on how the pcir package works;
+
+- Offer in person events at conferences, workshops and others.
+
+---
+class: center, middle
+
+###**Thank you all!** 
